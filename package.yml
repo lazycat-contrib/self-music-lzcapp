@@ -1,19 +1,17 @@
 package: community.lazycat.app.self-music
-version: 1.0.5
+version: 1.0.6
 name: Self Music
-description: "🌟 一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。（支持一键导入网易云音乐元数据，批量搜刮的私人音乐客户端）"
+description: "\U0001F31F 一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。（支持一键导入网易云音乐元数据，批量搜刮的私人音乐客户端）"
 min_os_version: "1.5.0"
 homepage: https://github.com/zkeq/Self-Music
 author: zkeq
-
 permissions:
   required:
     - net.internet
-
 locales:
   zh:
     name: "Self Music"
-    description: "🌟 一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。（支持一键导入网易云音乐元数据，批量搜刮的私人音乐客户端）"
+    description: "\U0001F31F 一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。（支持一键导入网易云音乐元数据，批量搜刮的私人音乐客户端）"
   en:
     name: "Self Music"
-    description: "🌟 A modern private music management and playback system, supporting playlists, lyrics synchronization, and multi-device access. (Supports one-click import of NetEase Cloud Music metadata, a batch scraping private music client)"
+    description: "\U0001F31F A modern private music management and playback system, supporting playlists, lyrics synchronization, and multi-device access. (Supports one-click import of NetEase Cloud Music metadata, a batch scraping private music client)"
