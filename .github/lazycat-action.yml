@@ -1,0 +1,36 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: .lazycat-build/self-music.lpk
+  target_arch: amd64
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: self-music
+build:
+  run_buildscript: false
+images:
+  - id: self-music
+    target: service
+    service: self-music
+    source: zkeq/self-music
+    channel: stable
+    sort: semver
+    tag_regex: '^\d+\.\d+\.\d+$'
+    delivery:
+      mode: mirror
+stores:
+  official:
+    enabled: false
+    skip_if_version_exists: true
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: Self Music
+    summary: "一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。"

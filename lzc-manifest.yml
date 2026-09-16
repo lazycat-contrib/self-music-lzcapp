@@ -1,0 +1,15 @@
+application:
+  subdomain: self-music
+  background_task: true
+  public_path:
+    - /
+
+  upstreams:
+    - location: /
+      backend: http://self-music:80/
+services:
+  self-music:
+    # upstream: zkeq/self-music:1.0.5
+    image: docker.1ms.run/zkeq/self-music:1.0.5
+    binds:
+      - /lzcapp/var/data:/data
