@@ -1,4 +1,5 @@
 package: community.lazycat.app.self-music
+license: MIT
 version: 1.0.6
 name: Self Music
 description: "\U0001F31F 一个现代化的私人音乐管理与播放系统，支持播放列表、歌词同步与多端访问。（支持一键导入网易云音乐元数据，批量搜刮的私人音乐客户端）"
